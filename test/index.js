@@ -93,3 +93,13 @@ test('stop has the correct duration', function(t){
 
   asyncTime(fn, done);
 });
+
+test('calls the callback upon completion', function(t){
+  var bus = new EE();
+  var asyncTime = require('../')(bus);
+
+  asyncTime(fn, function(err, res){
+    t.ok(err == null, 'error should be undefined');
+    t.end();
+  });
+});

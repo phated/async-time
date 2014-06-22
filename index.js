@@ -30,6 +30,8 @@ function createTimer(emitter){
         timestamp: Date.now(),
         duration: process.hrtime(startTime),
       });
+
+      cb(err, res);
     });
   }
 
