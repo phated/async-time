@@ -1,6 +1,6 @@
 {
   "name": "async-time",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Time async functions using async-done for execution and completion. ",
   "main": "index.js",
   "scripts": {
