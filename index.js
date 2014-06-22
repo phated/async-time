@@ -6,7 +6,7 @@ var uuid = require('uuid');
 var asyncDone = require('async-done');
 
 function createTimer(emitter){
-  assert(emitter && emitter.on, 'An EventEmitter must be passed as an argument.');
+  assert(emitter && emitter.on && emitter.emit, 'An EventEmitter must be passed as an argument.');
 
   if(emitter.setMaxListeners){
     emitter.setMaxListeners(0);
