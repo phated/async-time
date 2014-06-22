@@ -1,0 +1,35 @@
+{
+  "name": "async-time",
+  "version": "0.0.0",
+  "description": "Time async functions using async-done for execution and completion. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phated/async-time"
+  },
+  "keywords": [
+    "async",
+    "done",
+    "time",
+    "streams",
+    "promises",
+    "callbacks",
+    "continuations"
+  ],
+  "author": "Blaine Bublitz <blaine@iceddev.com> (http://iceddev.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phated/async-time/issues"
+  },
+  "homepage": "https://github.com/phated/async-time",
+  "dependencies": {
+    "async-done": "^0.2.0",
+    "uuid": "^1.4.1"
+  },
+  "devDependencies": {
+    "tap": "^0.4.11"
+  }
+}
